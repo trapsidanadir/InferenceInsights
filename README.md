@@ -1,5 +1,5 @@
 # InferenceInsights
-InferenceInsights offers a detailed comparison of deep learning inference across TensorFlow, PyTorch, and ONNX. We use the same images and a single pre-trained model, conducting tests via FastAPI with uniform configurations. My goal is to provide clear performance metrics, ensuring fair analysis and insights for developers!
+__InferenceInsights__ offers a detailed comparison of deep learning inference across TensorFlow, PyTorch, and ONNX. We use the same images and a single pre-trained model, conducting tests via FastAPI with uniform configurations. My goal is to provide clear performance metrics, ensuring fair analysis and insights for developers!
 
 ## Key Features
 __*Uniform Testing Environment*__: I conduct inference using FastAPI with identical configurations for each framework. This setup ensures that differences in performance are attributable to the frameworks themselves, not external factors.
