@@ -1,47 +1,67 @@
-from fastapi import FastAPI, File, UploadFile
-from contextlib import asynccontextmanager
-import torch
-from torchvision.transforms import functional as F
-from PIL import Image
+import json
 import time
+from contextlib import asynccontextmanager
+
+import numpy as np
+import torch
+from fastapi import FastAPI, File, UploadFile
+from PIL import Image
+
+MODEL_PATH = "./mobilenet_v2_jit_pt.pth"
+LABELS = {}
+model_loading_time = 0
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    global MODEL_PATH, LABELS, model_loading_time
     # Load model on startup
-    app.state.model = torch.jit.load("./mobilenet_v2-7ebf99e0.pth")
-    app.state.model.eval()
+    model_loading_start_time = time.time()
+    app.state.model = torch.jit.load(MODEL_PATH)
+    with open("imagenet_class_index.json", "r") as f:
+        LABELS = json.load(f)
+    model_loading_time = time.time() - model_loading_start_time
     yield
     # Clean up resources on shutdown
     del app.state.model
 
+
 app = FastAPI(lifespan=lifespan)
+
+
+def preprocess_image(image):
+    # Resize and normalize the image
+    image = image.resize((224, 224))  # Adjust size as needed for your model
+    image_array = np.array(image).astype(np.float32) / 255.0
+    image_array = np.transpose(image_array, (2, 0, 1))  # CHW format
+    return torch.from_numpy(image_array).unsqueeze(0)
+
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     start_time = time.time()
-
     # Read and preprocess the image
     image = Image.open(file.file).convert("RGB")
-    image = image.resize((300, 300))  # Adjust size as needed for your model
-    image_tensor = F.to_tensor(image).unsqueeze(0)
-    
+    input_data = preprocess_image(image)
+
     # Run inference
     with torch.no_grad():
-        predictions = app.state.model(image_tensor)
-    
-    # Process results (adjust based on your model's output format)
-    boxes = predictions[0].tolist()
-    scores = predictions[1].tolist()
-    labels = predictions[2].tolist()
-    
+        results = app.state.model(input_data)
+
+    # Get the predicted class probabilities
+    probabilities = torch.nn.functional.softmax(results[0], dim=0)
+    top_prob, top_class = torch.max(probabilities, 0)
+    label = LABELS[str(top_class.item())][-1]
+    score = top_prob.item()
+
     inference_time = time.time() - start_time
-    
+
     return {
-        "boxes": boxes,
-        "classes": labels,
-        "scores": scores,
-        "inference_time": inference_time
+        "class": label,
+        "score": score,
+        "inference_time (s)": inference_time,
+        "model_loading_time (s)": model_loading_time,
     }
+
 
 @app.get("/")
 async def root():
