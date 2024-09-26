@@ -11,6 +11,7 @@ MODEL_PATH = "./mobilenet_v2_jit_pt.pth"
 LABELS = {}
 model_loading_time = 0
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global MODEL_PATH, LABELS, model_loading_time
@@ -30,10 +31,12 @@ app = FastAPI(lifespan=lifespan)
 
 def preprocess_image(image):
     # Resize and normalize the image
-    image = image.resize((224, 224))  # Adjust size as needed for your model
-    image_array = np.array(image).astype(np.float32) / 255.0
-    image_array = np.transpose(image_array, (2, 0, 1))  # CHW format
-    return torch.from_numpy(image_array).unsqueeze(0)
+    image = image.resize((256, 256)).crop((16, 16, 240, 240))
+    img_array = np.array(image, dtype=np.float32) / 255.0
+    img_array = np.transpose(img_array, (2, 0, 1))
+    mean = np.array([0.485, 0.456, 0.406])[:, None, None]
+    std = np.array([0.229, 0.224, 0.225])[:, None, None]
+    return torch.from_numpy(((img_array - mean) / std).astype(np.float32)).unsqueeze(0)
 
 
 @app.post("/predict")

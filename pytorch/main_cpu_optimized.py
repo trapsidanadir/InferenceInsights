@@ -11,12 +11,13 @@ MODEL_PATH = "./mobilenet_v2_jit_pt.pth"
 LABELS = {}
 model_loading_time = 0
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global MODEL_PATH, LABELS, model_loading_time
     # Load model on startup
     model_loading_start_time = time.time()
-    app.state.model = torch.jit.load(MODEL_PATH, map_location=torch.device('cpu'))
+    app.state.model = torch.jit.load(MODEL_PATH, map_location=torch.device("cpu"))
     app.state.model.eval()  # Set the model to evaluation mode
     with open("imagenet_class_index.json", "r") as f:
         LABELS = json.load(f)
@@ -25,7 +26,9 @@ async def lifespan(app: FastAPI):
     # Clean up resources on shutdown
     del app.state.model
 
+
 app = FastAPI(lifespan=lifespan)
+
 
 def preprocess_image(image):
     # Resize and normalize the image
@@ -33,6 +36,7 @@ def preprocess_image(image):
     image_array = np.array(image, dtype=np.float32) / 255.0
     image_array = np.transpose(image_array, (2, 0, 1))  # CHW format
     return torch.from_numpy(image_array).unsqueeze(0)
+
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
@@ -59,6 +63,7 @@ async def predict(file: UploadFile = File(...)):
         "inference_time (s)": inference_time,
         "model_loading_time (s)": model_loading_time,
     }
+
 
 @app.get("/")
 async def root():
