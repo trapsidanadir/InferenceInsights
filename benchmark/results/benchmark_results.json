@@ -1,0 +1,902 @@
+[
+    {
+        "class": "banana",
+        "score": 0.9787734151,
+        "inference_time (s)": 0.0334722996,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0570163727,
+        "file_name": "banana.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "corn",
+        "score": 0.7634843588,
+        "inference_time (s)": 0.0162625313,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.1022222042,
+        "file_name": "corn.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.9935782552,
+        "inference_time (s)": 0.0187630653,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.1212048531,
+        "file_name": "football-helmet.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "gazelle",
+        "score": 0.894249022,
+        "inference_time (s)": 0.0452182293,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0701210499,
+        "file_name": "gazelle.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9998343587,
+        "inference_time (s)": 0.0166227818,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0769994259,
+        "file_name": "hotdog.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "mantis",
+        "score": 0.9806777239,
+        "inference_time (s)": 0.0301465988,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0787069798,
+        "file_name": "mantis.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "orange",
+        "score": 0.9272602797,
+        "inference_time (s)": 0.0161192417,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0798375607,
+        "file_name": "orange.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "pizza",
+        "score": 0.8847568035,
+        "inference_time (s)": 0.0517561436,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.1009235382,
+        "file_name": "pizza.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.9455259442,
+        "inference_time (s)": 0.2147943974,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.2882518768,
+        "file_name": "scooter.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9212349057,
+        "inference_time (s)": 0.009802103,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.2814333439,
+        "file_name": "sunglass.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "banana",
+        "score": 0.9787734151,
+        "inference_time (s)": 0.0098743439,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.038131237,
+        "file_name": "banana.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "corn",
+        "score": 0.7634843588,
+        "inference_time (s)": 0.0082969666,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.2628715038,
+        "file_name": "corn.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.9935782552,
+        "inference_time (s)": 0.0238597393,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0462777615,
+        "file_name": "football-helmet.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "gazelle",
+        "score": 0.894249022,
+        "inference_time (s)": 0.0091640949,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0676548481,
+        "file_name": "gazelle.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9998343587,
+        "inference_time (s)": 0.0112614632,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0421836376,
+        "file_name": "hotdog.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "mantis",
+        "score": 0.9806777239,
+        "inference_time (s)": 0.0097968578,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0308763981,
+        "file_name": "mantis.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "orange",
+        "score": 0.9272602797,
+        "inference_time (s)": 0.0096652508,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.03170228,
+        "file_name": "orange.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "pizza",
+        "score": 0.8847568035,
+        "inference_time (s)": 0.0168120861,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0373792648,
+        "file_name": "pizza.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.9455259442,
+        "inference_time (s)": 0.1190309525,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.1524198055,
+        "file_name": "scooter.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9212349057,
+        "inference_time (s)": 0.0372633934,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.1751694679,
+        "file_name": "sunglass.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "banana",
+        "score": 0.9787734151,
+        "inference_time (s)": 0.0112552643,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0388944149,
+        "file_name": "banana.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "corn",
+        "score": 0.7634843588,
+        "inference_time (s)": 0.0279455185,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0574111938,
+        "file_name": "corn.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.9935782552,
+        "inference_time (s)": 0.0168683529,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0989220142,
+        "file_name": "football-helmet.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "gazelle",
+        "score": 0.894249022,
+        "inference_time (s)": 0.0228643417,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.108802557,
+        "file_name": "gazelle.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9998343587,
+        "inference_time (s)": 0.0163533688,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0318713188,
+        "file_name": "hotdog.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "mantis",
+        "score": 0.9806777239,
+        "inference_time (s)": 0.0208172798,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0525221825,
+        "file_name": "mantis.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "orange",
+        "score": 0.9272602797,
+        "inference_time (s)": 0.011739254,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0461251736,
+        "file_name": "orange.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "pizza",
+        "score": 0.8847568035,
+        "inference_time (s)": 0.0239765644,
+        "model_loading_time (s)": 0.1738464832,
+        "total_request_time": 0.0633559227,
+        "file_name": "pizza.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.9455259442,
+        "inference_time (s)": 0.0633933544,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.1182801723,
+        "file_name": "scooter.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9212349057,
+        "inference_time (s)": 0.0153734684,
+        "model_loading_time (s)": 0.2155630589,
+        "total_request_time": 0.0462646484,
+        "file_name": "sunglass.jpg",
+        "api_name": "onnx",
+        "image_size_mb": 379.2901887894
+    },
+    {
+        "class": "banana",
+        "score": 0.9787734151,
+        "inference_time (s)": 0.6331884861,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.6462497711,
+        "file_name": "banana.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "corn",
+        "score": 0.7634847164,
+        "inference_time (s)": 0.2746713161,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.9225008488,
+        "file_name": "corn.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.993578434,
+        "inference_time (s)": 0.6332156658,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.6450974941,
+        "file_name": "football-helmet.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "gazelle",
+        "score": 0.8942494392,
+        "inference_time (s)": 0.1261339188,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.7741343975,
+        "file_name": "gazelle.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9998342991,
+        "inference_time (s)": 0.0922532082,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.8773350716,
+        "file_name": "hotdog.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "mantis",
+        "score": 0.9806784987,
+        "inference_time (s)": 0.0678498745,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3067994118,
+        "file_name": "mantis.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "orange",
+        "score": 0.9272601008,
+        "inference_time (s)": 0.0262217522,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3350317478,
+        "file_name": "orange.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "pizza",
+        "score": 0.8847568631,
+        "inference_time (s)": 0.0380120277,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.2481241226,
+        "file_name": "pizza.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.9455257654,
+        "inference_time (s)": 0.2931349277,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.3543131351,
+        "file_name": "scooter.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9212346673,
+        "inference_time (s)": 0.1242043972,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.4358923435,
+        "file_name": "sunglass.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "banana",
+        "score": 0.9787734151,
+        "inference_time (s)": 0.0792951584,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.153605938,
+        "file_name": "banana.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "corn",
+        "score": 0.7634847164,
+        "inference_time (s)": 0.1300332546,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.2691481113,
+        "file_name": "corn.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.993578434,
+        "inference_time (s)": 0.0746145248,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3015663624,
+        "file_name": "football-helmet.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "gazelle",
+        "score": 0.8942494392,
+        "inference_time (s)": 0.1157574654,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3393790722,
+        "file_name": "gazelle.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9998342991,
+        "inference_time (s)": 0.0647871494,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.2859332561,
+        "file_name": "hotdog.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "mantis",
+        "score": 0.9806784987,
+        "inference_time (s)": 0.1102967262,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3849995136,
+        "file_name": "mantis.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "orange",
+        "score": 0.9272601008,
+        "inference_time (s)": 0.0631906986,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.1034770012,
+        "file_name": "orange.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "pizza",
+        "score": 0.8847568631,
+        "inference_time (s)": 0.0696046352,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.1473941803,
+        "file_name": "pizza.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.9455257654,
+        "inference_time (s)": 0.2152886391,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.405621767,
+        "file_name": "scooter.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9212346673,
+        "inference_time (s)": 0.0284340382,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.1014153957,
+        "file_name": "sunglass.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "banana",
+        "score": 0.9787734151,
+        "inference_time (s)": 0.0253407955,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.1584253311,
+        "file_name": "banana.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "corn",
+        "score": 0.7634847164,
+        "inference_time (s)": 0.0626735687,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.0978825092,
+        "file_name": "corn.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.993578434,
+        "inference_time (s)": 0.0437226295,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.1646184921,
+        "file_name": "football-helmet.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "gazelle",
+        "score": 0.8942494392,
+        "inference_time (s)": 0.0504801273,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.1500627995,
+        "file_name": "gazelle.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9998342991,
+        "inference_time (s)": 0.0865809917,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.2259178162,
+        "file_name": "hotdog.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "mantis",
+        "score": 0.9806784987,
+        "inference_time (s)": 0.1879851818,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3869554996,
+        "file_name": "mantis.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "orange",
+        "score": 0.9272601008,
+        "inference_time (s)": 0.05417943,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.397554636,
+        "file_name": "orange.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "pizza",
+        "score": 0.8847568631,
+        "inference_time (s)": 0.2988729477,
+        "model_loading_time (s)": 0.370064497,
+        "total_request_time": 0.373896122,
+        "file_name": "pizza.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.9455257654,
+        "inference_time (s)": 0.0771028996,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.4241197109,
+        "file_name": "scooter.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9212346673,
+        "inference_time (s)": 0.0611095428,
+        "model_loading_time (s)": 0.3695883751,
+        "total_request_time": 0.3194475174,
+        "file_name": "sunglass.jpg",
+        "api_name": "pytorch",
+        "image_size_mb": 1044.4546957016
+    },
+    {
+        "class": "banana",
+        "score": 0.7294157147,
+        "inference_time (s)": 1.3158860207,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 1.3285369873,
+        "file_name": "banana.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "corn",
+        "score": 0.9939360023,
+        "inference_time (s)": 0.1066215038,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 1.4509010315,
+        "file_name": "corn.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.8740580678,
+        "inference_time (s)": 1.3303434849,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 1.3407478333,
+        "file_name": "football-helmet.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "gazelle",
+        "score": 0.50895679,
+        "inference_time (s)": 0.1092216969,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 1.5623710155,
+        "file_name": "gazelle.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9794203639,
+        "inference_time (s)": 0.1061751842,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 1.4375009537,
+        "file_name": "hotdog.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "mantis",
+        "score": 0.9206448197,
+        "inference_time (s)": 0.1012001038,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.3384218216,
+        "file_name": "mantis.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "orange",
+        "score": 0.8968848586,
+        "inference_time (s)": 0.1106081009,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.2112021446,
+        "file_name": "orange.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "pizza",
+        "score": 0.4687773883,
+        "inference_time (s)": 0.1170392036,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.235129118,
+        "file_name": "pizza.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.6072028279,
+        "inference_time (s)": 0.2946178913,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.5255782604,
+        "file_name": "scooter.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9615518451,
+        "inference_time (s)": 0.1153497696,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.2335150242,
+        "file_name": "sunglass.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "banana",
+        "score": 0.7294157147,
+        "inference_time (s)": 0.0971262455,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.3227667809,
+        "file_name": "banana.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "corn",
+        "score": 0.9939360023,
+        "inference_time (s)": 0.1085834503,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.4210207462,
+        "file_name": "corn.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.8740580678,
+        "inference_time (s)": 0.1158101559,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.5337164402,
+        "file_name": "football-helmet.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "gazelle",
+        "score": 0.50895679,
+        "inference_time (s)": 0.1037378311,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.2060577869,
+        "file_name": "gazelle.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9794203639,
+        "inference_time (s)": 0.1121716499,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.2214939594,
+        "file_name": "hotdog.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "mantis",
+        "score": 0.9206448197,
+        "inference_time (s)": 0.1199762821,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.2529835701,
+        "file_name": "mantis.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "orange",
+        "score": 0.8968848586,
+        "inference_time (s)": 0.1114966869,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.3303363323,
+        "file_name": "orange.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "pizza",
+        "score": 0.4687773883,
+        "inference_time (s)": 0.1128258705,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.3510792255,
+        "file_name": "pizza.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.6072028279,
+        "inference_time (s)": 0.1639065742,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.6483027935,
+        "file_name": "scooter.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9615518451,
+        "inference_time (s)": 0.1159164906,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.1410586834,
+        "file_name": "sunglass.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "banana",
+        "score": 0.7294157147,
+        "inference_time (s)": 0.1353042126,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.3524661064,
+        "file_name": "banana.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "corn",
+        "score": 0.9939360023,
+        "inference_time (s)": 0.1158602238,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.1446638107,
+        "file_name": "corn.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "football_helmet",
+        "score": 0.8740580678,
+        "inference_time (s)": 0.1102194786,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.5205733776,
+        "file_name": "football-helmet.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "gazelle",
+        "score": 0.50895679,
+        "inference_time (s)": 0.1348891258,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.1659011841,
+        "file_name": "gazelle.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "hotdog",
+        "score": 0.9794203639,
+        "inference_time (s)": 0.1006364822,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.5043230057,
+        "file_name": "hotdog.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "mantis",
+        "score": 0.9206448197,
+        "inference_time (s)": 0.1008415222,
+        "model_loading_time (s)": 1.3386151791,
+        "total_request_time": 0.493019104,
+        "file_name": "mantis.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "orange",
+        "score": 0.8968848586,
+        "inference_time (s)": 0.1087956429,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.1179528236,
+        "file_name": "orange.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "pizza",
+        "score": 0.4687773883,
+        "inference_time (s)": 0.1310117245,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.1409988403,
+        "file_name": "pizza.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "motor_scooter",
+        "score": 0.6072028279,
+        "inference_time (s)": 0.2540295124,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.3717894554,
+        "file_name": "scooter.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    },
+    {
+        "class": "sunglass",
+        "score": 0.9615518451,
+        "inference_time (s)": 0.1010227203,
+        "model_loading_time (s)": 1.3378145695,
+        "total_request_time": 0.365871191,
+        "file_name": "sunglass.jpg",
+        "api_name": "tensorflow",
+        "image_size_mb": 1376.7805604935
+    }
+]
