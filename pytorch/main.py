@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
     del app.state.model
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan, title="Pytorch API")
 
 
 def preprocess_image(image):

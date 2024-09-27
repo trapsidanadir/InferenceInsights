@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
     del app.state.session
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan, title="Onnx API")
 
 
 def preprocess_image(image):
