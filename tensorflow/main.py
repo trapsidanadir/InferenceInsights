@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import json
 import time
 from contextlib import asynccontextmanager
@@ -71,6 +71,7 @@ async def predict(file: UploadFile = File(...)):
 
 
 @app.get("/", status_code=status.HTTP_200_OK)
+@app.get("/health", status_code=status.HTTP_200_OK)
 async def root():
     return {
         "message": "TensorFlow Object Detection API",

@@ -46,7 +46,12 @@ def benchmark_api(url, image_files, num_calls):
 def parser():
     parser = argparse.ArgumentParser(description="Process a number of calls.")
     parser.add_argument(
-        "num_calls", type=int, default=30, help="Number of calls to make"
+        "--num_calls",
+        "-n",
+        type=int,
+        default=30,
+        help="Number of calls to make",
+        required=False,
     )
 
     return parser.parse_args()
@@ -56,12 +61,20 @@ def main():
     args = parser()
     # Define your API endpoints and image names
     apis = [
-        {"name": "onnx", "url": "http://onnx-api:8001", "image": "onnx-api"},
-        {"name": "pytorch", "url": "http://pytorch-api:8002", "image": "pytorch-api"},
+        {
+            "name": "onnx",
+            "url": "http://onnxapi:8001",
+            "image": "inferenceinsights-onnx-api",
+        },
+        {
+            "name": "pytorch",
+            "url": "http://pytorchapi:8002",
+            "image": "inferenceinsights-pytorch-api",
+        },
         {
             "name": "tensorflow",
-            "url": "http://tensorflow-api:8003",
-            "image": "tensorflow-api",
+            "url": "http://tensorflowapi:8003",
+            "image": "inferenceinsights-tensorflow-api",
         },
     ]
 
