@@ -1,3 +1,4 @@
+import datetime
 import json
 import time
 from contextlib import asynccontextmanager
@@ -68,4 +69,8 @@ async def predict(file: UploadFile = File(...)):
 
 @app.get("/", status_code=status.HTTP_200_OK)
 async def root():
-    return {"message": "PyTorch Object Detection API"}
+    return {
+        "message": "PyTorch Object Detection API",
+        "status": "healthy",
+        "timestamp": datetime.utcnow().isoformat(),
+    }
