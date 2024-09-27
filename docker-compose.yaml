@@ -78,6 +78,18 @@ services:
     networks:
       api-network:
         ipv4_address: 192.168.10.5
+  
+  ubuntu:
+    image: ubuntu:latest
+    container_name: ubuntu
+    tty: true  # Keep the container running
+    stdin_open: true  # Allows interactive mode
+    command: >
+      bash -c "apt-get update && apt-get install -y iputils-ping curl && bash"
+    networks:
+      api-network:
+        ipv4_address: 192.168.10.10
+
 
 networks:
   api-network:

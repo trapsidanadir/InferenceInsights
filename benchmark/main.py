@@ -63,17 +63,17 @@ def main():
     apis = [
         {
             "name": "onnx",
-            "url": "http://onnxapi:8001",
+            "url": "http://onnxapi:8000",
             "image": "inferenceinsights-onnx-api",
         },
         {
             "name": "pytorch",
-            "url": "http://pytorchapi:8002",
+            "url": "http://pytorchapi:8000",
             "image": "inferenceinsights-pytorch-api",
         },
         {
             "name": "tensorflow",
-            "url": "http://tensorflowapi:8003",
+            "url": "http://tensorflowapi:8000",
             "image": "inferenceinsights-tensorflow-api",
         },
     ]

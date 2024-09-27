@@ -33,14 +33,10 @@ app = FastAPI(lifespan=lifespan, title="Onnx API")
 def preprocess_image(image):
     # Resize and normalize the image
     image = image.resize((256, 256)).crop((16, 16, 240, 240))
-    img_array = np.array(image, dtype=np.float32) / 255.0
-    img_array = np.transpose(img_array, (2, 0, 1))
-    mean = np.array([0.485, 0.456, 0.406])[:, None, None]
-    std = np.array([0.229, 0.224, 0.225])[:, None, None]
-    img_array = ((img_array - mean) / std).astype(np.float32)
-    img_array = np.expand_dims(img_array, axis=0).transpose(0, 2, 3, 1)
-
-    return img_array.reshape(-1, 224, 224, 3)
+    img_array = np.array(image).astype(np.float32) / 255.0
+    mean = np.array([0.485, 0.456, 0.406])
+    std = np.array([0.229, 0.224, 0.225])
+    return np.expand_dims(((img_array - mean) / std).transpose(2, 0, 1), axis=0).astype(np.float32)
 
 
 @app.post("/predict")

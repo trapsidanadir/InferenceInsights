@@ -33,15 +33,12 @@ app = FastAPI(lifespan=lifespan, title="Tensorflow API")
 
 def preprocess_image(image):
     # Resize and normalize the image
-    image = image.resize((256, 256)).crop((16, 16, 240, 240))
-    img_array = np.array(image, dtype=np.float32) / 255.0
-    img_array = np.transpose(img_array, (2, 0, 1))
-    mean = np.array([0.485, 0.456, 0.406])[:, None, None]
-    std = np.array([0.229, 0.224, 0.225])[:, None, None]
-    img_array = ((img_array - mean) / std).astype(np.float32)
-
-    img_array = np.expand_dims(img_array, axis=0).transpose(0, 2, 3, 1)
-    return img_array.reshape(-1, 224, 224, 3)
+    image = image.resize((224, 224))
+    image = image.convert('RGB')
+    img_array = np.array(image).astype(np.float32)
+    img_array = np.expand_dims(img_array, axis=0)
+    img_array = img_array.astype(np.float32) / 127.5 - 1
+    return img_array
 
 
 @app.post("/predict")
