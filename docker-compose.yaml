@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  onnx-api:
+    container_name: onnx-api
+    build:
+      context: ./onnx
+      dockerfile: onnx.dockerfile
+    ports:
+      - "8001:8000"
+    networks:
+      model-network:
+        ipv4_address: 192.168.10.2
+    hostname: onnx-api
+    command: "gunicorn main:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 600"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 2s
+      timeout: 5s
+      retries: 3
+
+  pytorch-api:
+    container_name: pytorch-api
+    build:
+      context: ./pytorch
+      dockerfile: pytorch.dockerfile
+    ports:
+      - "8002:8000"
+    networks:
+      model-network:
+        ipv4_address: 192.168.10.3
+    hostname: pytorch-api
+    command: "gunicorn main:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 600"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 2s
+      timeout: 5s
+      retries: 3
+
+  tensorflow-api:
+    container_name: tensorflow-api
+    build:
+      context: ./tensorflow
+      dockerfile: tensorflow.dockerfile
+    ports:
+      - "8003:8000"
+    networks:
+      model-network:
+        ipv4_address: 192.168.10.4
+    hostname: tensorflow-api
+    command: "gunicorn main:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 600"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 2s
+      timeout: 5s
+      retries: 3
+
+  benchmark:
+    container_name: benchmark
+    build:
+      context: ./benchmark
+      dockerfile: benchmark.dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./benchmark/data:/app/data
+      - ./benchmark/results:/app/results
+    depends_on:
+      onnx-api:
+        condition: service_healthy
+      pytorch-api:
+        condition: service_healthy
+      model3-api:
+        condition: service_healthy
+    command: python main.py
+    networks:
+      model-network:
+        ipv4_address: 192.168.10.5
+
+networks:
+  model-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
