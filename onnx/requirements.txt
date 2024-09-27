@@ -3,3 +3,5 @@ numpy
 pillow
 onnxruntime
 python-multipart
+gunicorn
+uvicorn

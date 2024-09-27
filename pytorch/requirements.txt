@@ -2,6 +2,8 @@ fastapi
 uvicorn
 numpy<2
 pillow
+gunicorn
+uvicorn
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==2.3.1+cpu
 python-multipart
