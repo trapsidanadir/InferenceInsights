@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 
 import numpy as np
 import onnxruntime
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, status
 from PIL import Image
 
 MODEL_PATH = "./mobilenet_v2_pt.onnx"
@@ -38,7 +38,7 @@ def preprocess_image(image):
     std = np.array([0.229, 0.224, 0.225])[:, None, None]
     img_array = ((img_array - mean) / std).astype(np.float32)
     img_array = np.expand_dims(img_array, axis=0).transpose(0, 2, 3, 1)
-    
+
     return img_array.reshape(-1, 224, 224, 3)
 
 
@@ -73,6 +73,6 @@ async def predict(file: UploadFile = File(...)):
     }
 
 
-@app.get("/")
+@app.get("/", status_code=status.HTTP_200_OK)
 async def root():
     return {"message": "ONNX Object Detection API"}

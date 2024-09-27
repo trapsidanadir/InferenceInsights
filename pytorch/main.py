@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 
 import numpy as np
 import torch
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, status
 from PIL import Image
 
 MODEL_PATH = "./mobilenet_v2_jit_pt.pth"
@@ -66,6 +66,6 @@ async def predict(file: UploadFile = File(...)):
     }
 
 
-@app.get("/")
+@app.get("/", status_code=status.HTTP_200_OK)
 async def root():
     return {"message": "PyTorch Object Detection API"}
